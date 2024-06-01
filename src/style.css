@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(207, 59, 59);
+}
+:root {
+    --bg_header: #1e90ff;
+    --color-text: #fff;
+}
