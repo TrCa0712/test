@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/htpps//TrCa0712.github.io/test/static/css/main.3d150bfc.css",
+    "main.js": "/htpps//TrCa0712.github.io/test/static/js/main.d0a7a9db.js",
+    "static/js/453.d0dcf8ca.chunk.js": "/htpps//TrCa0712.github.io/test/static/js/453.d0dcf8ca.chunk.js",
+    "static/media/hinh1.jpeg": "/htpps//TrCa0712.github.io/test/static/media/hinh1.08338ddde1c10590d842.jpeg",
+    "index.html": "/htpps//TrCa0712.github.io/test/index.html",
+    "main.3d150bfc.css.map": "/htpps//TrCa0712.github.io/test/static/css/main.3d150bfc.css.map",
+    "main.d0a7a9db.js.map": "/htpps//TrCa0712.github.io/test/static/js/main.d0a7a9db.js.map",
+    "453.d0dcf8ca.chunk.js.map": "/htpps//TrCa0712.github.io/test/static/js/453.d0dcf8ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d150bfc.css",
+    "static/js/main.d0a7a9db.js"
+  ]
+}
