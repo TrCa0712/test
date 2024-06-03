@@ -6,9 +6,9 @@ export default function Header() {
     return (
         <>
             <div>
-                Header
+                Header móa như con cặc
             </div>
-            <img src={img1}/>
+            <img src={img1} />
             <FaCat />
         </>
     )
