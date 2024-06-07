@@ -1,35 +1,44 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
+import { AppProvider } from './AppContext';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home/Home';
+import Blog from './pages/blog/Blog';
+import Products from './pages/products/Products';
+import Contact from './pages/contact/Contact';
+import ProductDetail from './components/productDetail/ProductDetail';
+import Iphone from './pages/iphone/Iphone';
+import Macbook from './pages/macbook/Macbook';
+import Airpod from './pages/airpod/Airpod';
+import Cart from './components/cart/Cart';
+import ThanhToan from './pages/thanhtoan/ThanhToan';
+import Error from './pages/errorPages/Error';
+import BlogDetail from './pages/blogDetal/BlogDetail';
 
-import Footer from "./components/footer/Footer"
-import Header from "./components/header/Header"
-import Main from "./components/main/Main"
-import './style.css'
+const App = () => {
+    return (
+        <div>
 
-// function App() {
-//   let gia=10000
-//   let soluong=7
-//   return (
-//     <div className="contain" >
-//       <h1>Học Reactjs</h1>
-//       <h1>Giá: {gia} </h1>
-//       <h1>Số lượng: {soluong} </h1>
-//       <h1>Tổng tiền: {gia*soluong} </h1>
-//     </div>
-//   );
-// }
+            <AppProvider>
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<Home />}></Route>
+                        <Route path='/blog' element={<Blog />}></Route>
+                        <Route path='/blog/:id' element={<BlogDetail />}></Route>
+                        <Route path='/products' element={<Products />}></Route>
+                        <Route path='/contact' element={<Contact />}></Route>
+                        <Route path='/product/:id' element={<ProductDetail />}></Route>
+                        <Route path='/iphone' element={<Iphone />}></Route>
+                        <Route path='/macbook' element={<Macbook />}></Route>
+                        <Route path='/airpod' element={<Airpod />}></Route>
+                        <Route path='/cart' element={<Cart />}></Route>
+                        <Route path='/thanh-toan' element={<ThanhToan />}></Route>
 
-// export default App;
-function App(){
-
-  return(
-    <div>
-
-    <Header />
-    <Main />
-    <Footer />
-    </div>
-  )
+                        {/* <Route path='/*' element={<Error />}></Route> */}
+                    </Routes>
+                </BrowserRouter>
+            </AppProvider>
+        </div>
+    );
 }
 
-export default App
+export default App;

@@ -1,12 +1,36 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
-body{
-    background: rgb(207, 59, 59);
+
+body {
+    background: #3e3e3f;
+    color: #f8f8f8;
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal; */
 }
-:root {
-    --bg_header: #1e90ff;
-    --color-text: #fff;
+
+.mg-top-60 {
+    margin-top: 60px;
+}
+
+.white-color {
+    color: #f8f8f8;
+}
+
+.bg-color-box {
+    background: #323232;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+a [href] {
+    text-decoration: none;
 }
